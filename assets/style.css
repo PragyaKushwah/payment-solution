@@ -1,0 +1,462 @@
+*{
+    box-sizing: border-box;
+}
+input:focus-visible{
+    outline: 0;
+}
+a{
+    outline: 0;
+}
+.header {
+  border: 1px solid #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  
+}
+.mid-heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold !important;
+    font-size: 17px !important;
+}
+.brand_logo{
+    
+    /*padding: 10px 10px;*/
+    text-align: center;
+}
+.billing-details{
+    display: flex !important;
+}
+.position-relative{
+    position:relative;
+}
+
+#loader {
+  position: absolute;
+  left: 52%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display:none;
+}
+
+#term_cond_link{
+   font-size:12px; 
+}
+
+.link_cond{
+    text-decoration:none !important;
+}
+
+.margin-right-5{
+    margin-right:5px !important;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+.main-heading{
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.main-content p{
+font-size: 16px;
+font-weight: 400;
+}
+.home-content {
+    width: 100%;
+    max-width: 635px;
+    /* display: flex; */
+}
+.home-content label{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+}
+.other-option{
+
+    border: 0px;
+    border-bottom: 1px solid;
+}
+.payment_details{
+    width: 100%;
+    max-width: 627px; 
+    margin-top: 30px;
+}
+.toggle_btn{
+    padding: 12px;
+}
+.toggle_btn a{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    text-decoration: none;
+}
+.card-form__button{
+    width: 100%;
+    height: 45px;
+    background: #2364d2;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Source Sans Pro", sans-serif;
+    box-shadow: 3px 10px 20px 0px rgb(35 100 210 / 30%);
+    color: #fff;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.tab2-btn{
+    margin-top: 20px;
+
+}
+.panel-footer .card-form__button:hover{
+    color:white;
+    border: 1px solid#4dc1f1;
+    background-color: #1496ce;
+ 
+}
+.form-group span img{
+width: 90px;
+position:absolute;
+left: 80%;
+top: 10px;
+
+}
+
+ul.nav.nav-tabs {
+    border: none;
+}
+
+
+
+div#myTabContent {
+    /* border: 1px solid #b8b6b6; */
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding:30px 50px;
+    /*padding-top: 30px;*/
+    
+   
+}
+li.toggle_btn.active {
+    /* border: 1px solid #b8b6b6; */
+    border-bottom: none;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    
+}
+
+hr.horizontal-row {
+    opacity: .58;
+    color: #4fb5e4;
+}
+.card-input__input {
+    width: 100%;
+    height: 40px;
+    /* border-radius: 5px; */
+    box-shadow: none;
+    border: 1px solid #ced6e0;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    padding: 5px 10px;
+    background: none;
+    color: #1a3b5d;
+    font-family: "Source Sans Pro", sans-serif;
+    
+}
+.input-group {
+    margin-bottom: 10px;
+}
+.card-details{
+    margin-right: 20px;
+}
+.card-input__input:focus{
+    box-shadow: 0px 10px 20px -13px rgb(32 56 117 / 35%);
+    border-color: #3d9cff;
+}
+input#myDIV:focus-visible {
+    outline: 0px;
+    
+}
+input#myDIV:focus {
+    border-color: #3d9cff;
+}
+.card-input__input:focus-visible {
+    outline: 0px;
+   
+}
+
+/* responsive media query*/
+
+  @media screen and (min-width: 767px) {
+    .form-group {
+        width: 500px;
+    }
+}
+  @media screen and (max-width: 768px) {
+     .card-form__button{
+        width: 100%;
+        height: 45px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    
+    div#myTabContent {
+        
+        padding: 15px;
+        
+    }
+    
+  }
+  @media screen and (max-width: 360px) {
+    .form-group span img {
+        width: 50px;
+        
+    }
+    .other-option{
+        width: 40%;
+    }
+    
+  }
+  @media screen and (max-width: 600px) {
+    .form-group span img {
+       
+        left: 72%;
+        top: 10px;
+        
+    }
+    .home-content {
+        padding:0 20px;
+        display:block;
+    }
+    
+    .other-option{
+        width: 40%;
+    }
+    
+    .billing-details{
+        display: block !important;
+    }
+    
+  }
+  @media screen and (min-width: 601px) {
+    .card-form__button{
+        width:500px;
+        
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /*----------------------------------------------*/
+  /*------------- success page css ---------------*/
+  
+  
+  *{box-sizing: border-box;
+}
+
+.logo{
+    text-align: center;
+    box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+.logo img{
+    padding: 10px ;
+}
+
+.icon{
+    text-align: center;
+    
+}
+.icon img{
+    width: 65px;
+  
+}
+.icon h2{
+    margin: 20px;
+    color: #10c8b1;
+    font-weight: 700;
+}
+.icon h2 span{
+    color: #22d49a;
+}
+.row.content {
+    /* margin: auto;
+    width: 100%; */
+    justify-content: center;
+}
+.form-content{
+    text-align: justify;
+}
+.pyament-content{
+    text-align: center;
+
+}
+p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.horizontal-line{
+    border: 2px solid #515151;
+}
+.footer-content{
+    text-align: center;
+    /* font-size: 15px; */
+}
+.footer-num{
+    text-decoration: none;
+    
+}
+
+/* media queries */
+@media (max-width: 576px) {
+    .footer-content{
+        text-align: center;
+        font-size: 15px;
+    } 
+    .icon img {
+        width: 58px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+     .header{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+height: 100vh;
+
+} 
+  
+}
+/* @media (min-width: 576px) {
+   
+    .header {
+        
+        margin-top: 80px;
+    }
+} */
+@media (max-width:768px) {
+    .footer-content{
+        text-align: center;
+        font-size: 15px;
+    } 
+    .icon img {
+        width: 58px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .content{
+        margin-top: 20px;
+    }
+   
+    
+        
+}
+@media (max-width: 768px){
+.header{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+height: 65vh;
+
+}
+}
+@media (max-width: 480px){
+    .header{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 60vh;
+        
+        }
+}
+@media (max-width:360px){
+    .header{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 80vh;
+        
+        }
+}

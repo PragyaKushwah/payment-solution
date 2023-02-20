@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+input:focus-visible{
+    outline: 0;
+}
+a{
+    outline: 0;
+}
+.header {
+  border: 1px solid #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  
+}
+
+.brand_logo{
+    
+    padding: 10px 10px;
+    text-align: center;
+}
+.main-heading{
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.main-content p{
+font-size: 16px;
+font-weight: 400;
+}
+.home-content {
+    width: 100%;
+    max-width: 635px;
+    /* display: flex; */
+}
+.home-content label{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+}
+.other-option{
+
+    border: 0px;
+    border-bottom: 1px solid;
+}
+.payment_details{
+    width: 100%;
+    max-width: 627px; 
+    margin-top: 30px;
+}
+.toggle_btn{
+    padding: 12px;
+}
+.toggle_btn a{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    text-decoration: none;
+}
+.card-form__button{
+    width: 100%;
+    height: 45px;
+    background: #2364d2;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Source Sans Pro", sans-serif;
+    box-shadow: 3px 10px 20px 0px rgb(35 100 210 / 30%);
+    color: #fff;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.tab2-btn{
+    margin-top: 20px;
+
+}
+.panel-footer .card-form__button:hover{
+    color:white;
+    border: 1px solid#4dc1f1;
+    background-color: #1496ce;
+ 
+}
+.form-group span img{
+width: 90px;
+position:absolute;
+left: 80%;
+top: 10px;
+
+}
+
+ul.nav.nav-tabs {
+    border: none;
+}
+
+
+
+div#myTabContent {
+    /* border: 1px solid #b8b6b6; */
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding:30px 50px;
+    /*padding-top: 30px;*/
+    
+   
+}
+li.toggle_btn.active {
+    /* border: 1px solid #b8b6b6; */
+    border-bottom: none;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    
+}
+
+hr.horizontal-row {
+    opacity: .58;
+    color: #4fb5e4;
+}
+.card-input__input {
+    width: 100%;
+    height: 40px;
+    /* border-radius: 5px; */
+    box-shadow: none;
+    border: 1px solid #ced6e0;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    padding: 5px 10px;
+    background: none;
+    color: #1a3b5d;
+    font-family: "Source Sans Pro", sans-serif;
+    
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.card-details{
+    margin-right: 20px;
+}
+.card-input__input:focus{
+    box-shadow: 0px 10px 20px -13px rgb(32 56 117 / 35%);
+    border-color: #3d9cff;
+}
+input#myDIV:focus-visible {
+    outline: 0px;
+    
+}
+input#myDIV:focus {
+    border-color: #3d9cff;
+}
+.card-input__input:focus-visible {
+    outline: 0px;
+   
+}
+
+/* responsive media query*/
+
+  @media screen and (min-width: 767px) {
+    .form-group {
+        width: 500px;
+    }
+}
+  @media screen and (max-width: 768px) {
+     .card-form__button{
+        width: 100%;
+        height: 45px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    
+    div#myTabContent {
+        
+        padding: 15px;
+        
+    }
+    
+  }
+  @media screen and (max-width: 360px) {
+    .form-group span img {
+        width: 50px;
+        
+    }
+    
+    
+  }
+  @media screen and (max-width: 600px) {
+    .form-group span img {
+       
+        left: 72%;
+        top: 10px;
+        
+    }
+    .home-content {
+      
+        display:block;
+    }
+    
+  }
+  @media screen and (min-width: 601px) {
+    .card-form__button{
+        width:500px;
+        
+    }
+  }

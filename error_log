@@ -1,0 +1,1 @@
+[16-Feb-2023 11:17:47 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/pragyadbtechserv/public_html/paymentSolution/app/Http/Controllers/Payment.php on line 239
